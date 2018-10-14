@@ -1,7 +1,7 @@
 const express = require('express');
 var weather = require('openweather-apis');
 const googleMapsClient = require('@google/maps').createClient({
-  key: 'AIzaSyDQbQLlbMxDXov2qKWz7HO0fPMhDgH8OT4'
+  key: 'YOUR_API_KEY'
 });
 var router = express.Router();
 var ObjectId = require('mongoose').Types.ObjectId;
@@ -11,7 +11,7 @@ var { WeatherInfo } = require('../models/WeatherInfo');
 //configuring weather
 weather.setLang('en');
 weather.setUnits('metric');
-weather.setAPPID('fb5ec00e3868a8be03f0bbde7fe1125a');
+weather.setAPPID('YOUR_API_KEY');
 
 router.post('/', (req, res) => {
   console.log('fetching from maps direction api');
