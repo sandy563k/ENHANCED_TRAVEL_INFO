@@ -1,4 +1,4 @@
-# ENHANCED_WAYPOINTS_INFO
+# ENHANCED_TRAVEL_INFO
 The objective of the project is to design and implement a complete
 service-based distributed web application that provides users enhanced information about a travel route.
 
