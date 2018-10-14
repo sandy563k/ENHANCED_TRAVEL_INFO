@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>WayPoints WeatherInfo Service</title>
+    <link rel="stylesheet" href="./mystyles.css">
+  </head>
+  <body>
+    <div id="floating-panel">
+    <b>Start: </b>
+    <select id="start">
+      <option value="oklahoma city, ok">Oklahoma City</option>
+      <option value="chicago, il">Chicago</option>
+      <option value="st louis, mo">St Louis</option>
+      <option value="joplin, mo">Joplin, MO</option>
+      <option value="amarillo, tx">Amarillo</option>
+      <option value="gallup, nm">Gallup, NM</option>
+      <option value="flagstaff, az">Flagstaff, AZ</option>
+      <option value="winona, az">Winona</option>
+      <option value="kingman, az">Kingman</option>
+      <option value="barstow, ca">Barstow</option>
+      <option value="san bernardino, ca">San Bernardino</option>
+      <option value="los angeles, ca">Los Angeles</option>
+      <option value="montreal, quebec">Montreal, QBC</option>
+      <option value="toronto, ont">Toronto, ONT</option>
+      <option value="chicago, il">Chicago</option>
+      <option value="winnipeg, mb">Winnipeg</option>
+      <option value="fargo, nd">Fargo</option>
+      <option value="calgary, ab">Calgary</option>
+      <option value="spokane, wa">Spokane</option>
+      <option value="Halifax, NS">Halifax, NS</option>
+      <option value="Boston, MA">Boston, MA</option>
+      <option value="New York, NY">New York, NY</option>
+      <option value="Miami, FL">Miami, FL</option>
+      <option value="Vancouver, BC">Vancouver, BC</option>
+      <option value="Seattle, WA">Seattle, WA</option>
+      <option value="San Francisco, CA">San Francisco, CA</option>
+    </select>
+    <b>End: </b>
+    <select id="end">
+        <option value="oklahoma city, ok">Oklahoma City</option>
+        <option value="chicago, il">Chicago</option>
+        <option value="st louis, mo">St Louis</option>
+        <option value="joplin, mo">Joplin, MO</option>
+        <option value="amarillo, tx">Amarillo</option>
+        <option value="gallup, nm">Gallup, NM</option>
+        <option value="flagstaff, az">Flagstaff, AZ</option>
+        <option value="winona, az">Winona</option>
+        <option value="kingman, az">Kingman</option>
+        <option value="barstow, ca">Barstow</option>
+        <option value="san bernardino, ca">San Bernardino</option>
+        <option value="los angeles, ca">Los Angeles</option>
+        <option value="montreal, quebec">Montreal, QBC</option>
+        <option value="toronto, ont">Toronto, ONT</option>
+        <option value="chicago, il">Chicago</option>
+        <option value="winnipeg, mb">Winnipeg</option>
+        <option value="fargo, nd">Fargo</option>
+        <option value="calgary, ab">Calgary</option>
+        <option value="spokane, wa">Spokane</option>
+        <option value="Halifax, NS">Halifax, NS</option>
+        <option value="Boston, MA">Boston, MA</option>
+        <option value="New York, NY">New York, NY</option>
+        <option value="Miami, FL">Miami, FL</option>
+        <option value="Vancouver, BC">Vancouver, BC</option>
+        <option value="Seattle, WA">Seattle, WA</option>
+        <option value="San Francisco, CA">San Francisco, CA</option>
+    </select>
+    </div>
+    <div id="map"></div>
+    &nbsp;
+    <div id="warnings-panel"></div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script async 
+      src="./MapsFunctionality.js">
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQbQLlbMxDXov2qKWz7HO0fPMhDgH8OT4&callback=initMap&libraries=geometry">
+    </script>
+
+
+  </body>
+</html>
